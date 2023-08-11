@@ -6,6 +6,8 @@ const getCurrent = require("./getCurrent.js");
 const signout = require("./signout.js");
 const updateSubscription = require("./updateSubscription.js");
 const updateAvatar = require("./updateAvatar.js");
+const verify = require("./verify");
+const resendVerify = require("./resendVerify");
 
 module.exports = {
   signin: ctrlWrapper(signin),
@@ -14,4 +16,6 @@ module.exports = {
   signout: ctrlWrapper(signout),
   updateSubscription: ctrlWrapper(updateSubscription),
   updateAvatar: ctrlWrapper(updateAvatar),
+  verify: ctrlWrapper(verify),
+  resendVerify: ctrlWrapper(resendVerify),
 };
